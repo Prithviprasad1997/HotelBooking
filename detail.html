@@ -4,6 +4,7 @@
 <head>
     <title>Detail</title>
     <link rel="stylesheet" href="styles/detail.css">
+    <link rel="stylesheet" href="styles/common.css">
 </head>
 
 <body>
@@ -12,9 +13,9 @@
             <a href="index.html"><img src="/assests/images/logo.png" alt="logo" class="logoImage"></a>
             <a href="login.html">Login</a>
         </header>
-        <div>
+        <div class="cityDivison">
             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="raddison"></br>
-            <form action="payment.html" method="GET">
+            <form action="payment.html" method="GET" class="formcity">
                 <label>Adults :</label>
                 <input type="number" name="adults" required min="1"> <br>
                 <label>Name :</label>
@@ -27,23 +28,25 @@
                 <input type="text" readonly><br>
                 <button>Book Now</button>
             </form>
-            <p>
-                <h3>Raddison Blu Hotel</h3>
-                <p>RATING</p>
-                5 Star
-                <p>AMENITIES</p>
-                <ul>
-                    <li>Room Service</li>
-                    <li>Restaurant</li>
-                    <li>Business Center
-                    </li>
-                    <li>Fitness Center</li>
-                    <li>Pool</li>
-                </ul>
-                DESCRIPTION
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iste repudiandae minus nobis, corporis quos veritatis. Nulla laborum iure placeat labore vero aut atque ad, cupiditate nobis, quia ex aperiam?Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Eos consectetur aliquid atque quisquam, impedit temporibus iure nostrum mollitia repellendus id dolorum perferendis voluptatibus sunt voluptates natus nulla quidem laudantium illum!</p>
-            </p>
+            <div class="description">
+                <p>
+                    <h3>Raddison Blu Hotel</h3>
+                    <p>RATING</p>
+                    5 Star
+                    <p>AMENITIES</p>
+                    <ul>
+                        <li>Room Service</li>
+                        <li>Restaurant</li>
+                        <li>Business Center
+                        </li>
+                        <li>Fitness Center</li>
+                        <li>Pool</li>
+                    </ul>
+                    DESCRIPTION
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iste repudiandae minus nobis, corporis quos veritatis. Nulla laborum iure placeat labore vero aut atque ad, cupiditate nobis, quia ex aperiam?Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Eos consectetur aliquid atque quisquam, impedit temporibus iure nostrum mollitia repellendus id dolorum perferendis voluptatibus sunt voluptates natus nulla quidem laudantium illum!</p>
+                </p>
+            </div>
         </div>
         <footer>
             <div><a href="contact.html">Contact Us</a></div>

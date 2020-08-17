@@ -1,25 +1,13 @@
-.logoImage {
-    height: 60px;
-    width: 60px;
-}
-
-html,
-body {
-    height: 100%;
-    width: 100%;
-}
-
-.mainContainer {
-    height: 100%;
-    width: 100%;
-}
-
 .raddison {
     height: 500px;
     width: 500px;
+    margin: 2% 4% 0% 4%;
 }
 
-.socialImg {
-    height: 20px;
-    width: 22px;
+.formcity {
+    margin: 0% 4% 1% 4%;
+}
+
+.description {
+    margin: 1% 4% 2% 4%;
 }

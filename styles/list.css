@@ -1,25 +1,10 @@
-.logoImage {
-    height: 60px;
-    width: 60px;
-}
-
-html,
-body {
-    height: 100%;
-    width: 100%;
-}
-
-.mainContainer {
-    height: 100%;
-    width: 100%;
-}
-
 .cityImage {
     height: 250px;
     width: 250px;
 }
 
-.socialImg {
-    height: 20px;
-    width: 22px;
+.citydiv {
+    margin-left: 2%;
+    background-color: rgb(132, 136, 139);
+    width: 40%;
 }
