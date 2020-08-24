@@ -1,8 +1,8 @@
     .cityImage {
         height: 150px;
         width: 150px;
-        padding: 4%;
-        border-radius: 25%;
+        border-radius: 25px;
+        box-shadow: 10px 10px 5px grey;
     }
     
     .searchBar {
@@ -15,8 +15,9 @@
     }
     
     .listofCity {
-        margin-left: 10%;
-        margin-right: 10%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
     }
     
     .view {
@@ -24,8 +25,9 @@
         text-decoration: none;
     }
     
-    header {
-        z-index: 1;
+    .views {
+        text-align: center;
+        margin-top: 35px;
     }
     
     .searchBar input {
@@ -38,5 +40,42 @@
         padding: 10px;
         font-size: 16px;
         width: 300px;
-        border: 1px solid black transparent;
+        border: 1px solid white;
+    }
+    
+    .all {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .listofCity a {
+        padding: 4%;
+    }
+    
+    .content {
+        position: relative;
+    }
+    
+    .middle {
+        transition: .5s ease;
+        position: absolute;
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .content:hover .middle {
+        opacity: 0.4;
+    }
+    
+    .content:hover .cityImage {
+        opacity: 0.3;
+        background-color: black;
+    }
+    
+    .text {
+        color: black;
+        text-align: center;
     }

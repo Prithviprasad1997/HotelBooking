@@ -1,13 +1,19 @@
 .raddison {
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 270px;
 }
 
 .nameofhotel {
+    display: flex;
     background-color: rgb(132, 136, 139);
     width: 50%;
     height: 20%;
-    margin: 2% auto 2% auto;
+    margin: 6% auto 2% auto;
+}
+
+.desc {
+    padding: 2%;
+    font-family: 'Ubuntu';
 }
 
 .customer {
@@ -15,7 +21,6 @@
 }
 
 .tarrif {
-    border: 1px solid black;
     border-radius: 5px;
     margin: 2%;
     padding: 1% 2% 1% 2%;
@@ -24,4 +29,19 @@
 .pay {
     text-decoration: none;
     color: black;
+    line-height: 10;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.down {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid;
+    margin: 2%;
+    border-radius: 25px;
 }

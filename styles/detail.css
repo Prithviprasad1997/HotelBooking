@@ -10,4 +10,30 @@
 
 .description {
     margin: 1% 4% 2% 4%;
+    font-family: cursive;
+}
+
+.first {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 3% 2% 3%;
+    border: 1px solid black;
+}
+
+.form_table {
+    border-left: 1px solid black;
+}
+
+.labels {
+    display: flex;
+    padding: 10%;
+}
+
+.labels input {
+    width: 300px;
+    margin-left: 30px;
+}
+
+.buttonc {
+    text-align: center;
 }

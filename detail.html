@@ -5,6 +5,7 @@
     <title>Detail</title>
     <link rel="stylesheet" href="styles/detail.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,20 +15,27 @@
             <a href="login.html" class="loginId">Login</a>
         </header>
         <div class="cityDivison">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="raddison"></br>
-            <form action="payment.html" method="GET" class="formcity">
-                <label>Adults :</label>
-                <input type="number" name="adults" required min="1"> <br>
-                <label>Name :</label>
-                <input type="text" name="name" required> <br>
-                <label>From Date :</label>
-                <input type="date" required name="FromDate"><br>
-                <label>To Date :</label>
-                <input type="date" required name="ToDate"><br>
-                <label>Total :</label>
-                <input type="text" readonly><br>
-                <button>Book Now</button>
-            </form>
+            <div class="first">
+                <div><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="raddison"></br>
+                </div>
+
+                <div class="form_table">
+                    <form action="payment.html" method="GET" class="formcity">
+                        <div class="labels"><label>Adults:</label>
+                            <input type="number" name="adults" required min="1"> <br></div>
+                        <div class="labels"><label>Name:</label>
+                            <input type="text" name="name" required> <br></div>
+                        <div class="labels"><label>From Date:</label>
+                            <input type="date" required name="FromDate"><br></div>
+                        <div class="labels"> <label>To Date:</label>
+                            <input type="date" required name="ToDate"><br></div>
+                        <div class="labels"> <label>Total:</label>
+                            <input type="text" readonly><br></div>
+                        <div class="buttonc"><button>Book Now</button></div>
+
+                    </form>
+                </div>
+            </div>
             <div class="description">
                 <p>
                     <h3>Raddison Blu Hotel</h3>
@@ -49,16 +57,19 @@
             </div>
         </div>
         <footer>
-            <div class="contact"><a href="contact.html" style="color: black;
-                text-decoration: none;">Contact Us</a></div>
+            <div class="contact">
+                <a href="contact.html" style="color: black;
+                text-decoration: none;">Contact Us</a>
+            </div>
+            <div class="fontss">
+                &copy 2020 ROOM SEARCH PVT.LTD.
+            </div>
             <div class="copyright">
                 <a href="http://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" class="socialImg"></a>
                 <a href="http://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" class="socialImg"></a>
                 <a href="http://www.twitter.com" target="_blank"><img src="assests/images/twitter.png" class="socialImg"></a>
             </div>
-            <div class="fontss">
-                &copy 2020 ROOM SEARCH PVT.LTD.
-            </div>
+
         </footer>
     </div>
 </body>
