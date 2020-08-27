@@ -37,3 +37,20 @@
 .buttonc {
     text-align: center;
 }
+
+#btn-primary {
+    color: black;
+    background-color: #ecf0e7;
+    border-color: #ffffff;
+    /*set the color you want here*/
+}
+
+#btn-primary:hover,
+#btn-primary:focus,
+#btn-primary:active,
+#btn-primary.active {
+    color: #fff;
+    background-color: #08bd18;
+    border-color: #285e8e;
+    /*set the color you want here*/
+}

@@ -6,22 +6,81 @@
     <link rel="stylesheet" href="styles/list.css">
     <link rel="stylesheet" href="styles/common.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="scripts/list.js"></script>
 </head>
 
 <body>
     <div class="mainContainer">
-        <header>
-            <a href="index.html"><img src="/assests/images/logo.png" alt="logo" class="logoImage"></a>
-            <a href="login.html" class="loginId">Login</a>
-        </header>
-        <div class="contentDiv">
-            <div class="listBar">
-                <ul>
-                    <li><a href="#scrollDiv">List View</a></li>
-                    <li><a href="#mapView">Map View</a></li>
-                </ul>
+        <header class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-6"><img src="/assests/images/logo.png" alt="logo" class="logoImage"></div>
+
+                <div class="col-sm-6 text-right">
+                    <!-- <button type="button" class="btn btn-light" data-toggle="modal" data-target="#myModal">LOGIN</button> -->
+                    <a href="login.html" data-toggle="modal" data-target="#myModal" class="btn btn-light">LOGIN</a>
+                </div>
             </div>
-            <div class="cities">
+        </header>
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+
+                    <div class="modal-header">
+                        <h3 class="modal-title">Please Login</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+
+                    <div class="modal-body">
+                        <form action="#" class="login1">
+                            <label for="username" style="margin-top: 30px;">Username:</label>
+                            <input type="text" id="name" placeholder="Username" style="margin-left: 50px;"><br>
+                            <label for="Password" style="margin-top: 30px;">Password:</label>
+                            <input type="password" name="password" placeholder="Password" id="pass" style="margin-left: 52px;">
+                        </form>
+                    </div>
+
+
+                    <div class="modal-footer" id="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="loginbt">Login</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="contentDiv">
+            <div class="container-fluid">
+                <div class="row" id="total">
+                    <div class="col-sm-6" id="b1c"><button id="b2" type="button" class="btn btn-primary active">List View</button></li>
+                    </div>
+
+                    <div class="col-sm-6" id="b2c"><button class="btn btn-primary active" id="b1" type="button" onclick="myFunction()">Map View</button></div>
+
+                </div>
+            </div>
+            <script>
+                $("#b2").click(function() {
+                    $('html,body').animate({
+                            scrollTop: $(".cities").offset().top
+                        },
+                        'fast');
+                });
+                $("#b1").click(function() {
+                    $('html,body').animate({
+                            scrollTop: $("#mapView").offset().top
+                        },
+                        'fast');
+                });
+            </script>
+
+
+            <div class="cities" id="sc1">
                 <div id="scrollDiv" class="citydiv">
                     <a href="detail.html" style="display: flex;">
                         <div><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="cityImage"></div>
@@ -57,21 +116,56 @@
                 <h3>Map View</h3>
             </div>
         </div>
-        <footer>
-            <div class="contact">
-                <a href="contact.html" style="color: black;
-                text-decoration: none;">Contact Us</a>
-            </div>
-            <div class="fontss">
-                &copy 2020 ROOM SEARCH PVT.LTD.
-            </div>
-            <div class="copyright">
-                <a href="http://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" class="socialImg"></a>
-                <a href="http://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" class="socialImg"></a>
-                <a href="http://www.twitter.com" target="_blank"><img src="assests/images/twitter.png" class="socialImg"></a>
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 foot1">
+
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal2">Contact US</button>
+
+                </div>
+                <div class="col-sm-4 foot2">
+
+                    &copy 2020 ROOM SEARCH PVT.LTD.
+
+                </div>
+                <div class="col-sm-4 foot3">
+
+                    <a href="http://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" class="socialImg"></a>
+                    <a href="http://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" class="socialImg"></a>
+                    <a href="http://www.twitter.com" target="_blank"><img src="assests/images/twitter.png" class="socialImg"></a>
+
+                </div>
             </div>
 
+
         </footer>
+        <div class="modal fade" id="myModal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h3 class="modal-title">Get in Touch</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p>Thank you for reaching out !!!</p>
+                        <p>Please enter your email address we will get back to you.</p>
+                        <label>Email :</label>
+                        <input type="email" name="email" id="email" placeholder="your email">
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
 

@@ -16,30 +16,43 @@
     color: black;
 }
 
-.listBar {
-    text-align: center;
-}
-
-.listBar li {
-    display: inline-block;
-    font-weight: bold;
-    padding-right: 50px;
-}
-
-.listBar a {
-    text-decoration: none;
-    color: black;
-}
-
-#mapView {
-    display: none;
-}
-
 .cities {
     display: flex;
     flex-wrap: wrap;
 }
 
+#mapView {
+    margin-top: 30px;
+    display: none;
+}
+
 .content {
     margin-left: 10px;
+}
+
+#b1c {
+    text-align: right;
+}
+
+#total {
+    margin-top: 10px;
+}
+
+#b1,
+#b2 {
+    background-color: #e0e0e0;
+    color: black;
+    border-color: #e0e0e0;
+}
+
+#b2:active,
+#b2:focus,
+#b2:hover {
+    background-color: #4a87ce;
+}
+
+#b1:hover,
+#b1:active,
+#b1:focus {
+    background-color: #4a87ce;
 }

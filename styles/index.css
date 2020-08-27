@@ -79,3 +79,21 @@
         color: black;
         text-align: center;
     }
+    
+    #modal-footer {
+        display: inline;
+        text-align: center;
+    }
+    
+    .login1 {
+        padding: 5%;
+    }
+    
+    #loginbt {
+        background-color: blue;
+    }
+    
+    #viewbt {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }

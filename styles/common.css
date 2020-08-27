@@ -16,6 +16,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Ubuntu';
+    background-color: #e0e0e0;
 }
 
 .socialImg {
@@ -40,7 +41,6 @@ header {
 footer {
     position: sticky;
     display: flex;
-    height: 100px;
     justify-content: space-between;
     align-items: center;
     bottom: 0px;
@@ -59,4 +59,19 @@ footer {
     margin-right: 2%;
     color: black;
     text-decoration: none;
+}
+
+.foot1,
+.foot2,
+.foot3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.foot2 {
+    text-align: center;
+}
+
+.foot3 {
+    text-align: right;
 }
