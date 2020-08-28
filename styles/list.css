@@ -56,3 +56,12 @@
 #b1:focus {
     background-color: #4a87ce;
 }
+
+.checked {
+    color: orange;
+}
+
+.rad:hover {
+    text-decoration: none;
+    color: black;
+}
