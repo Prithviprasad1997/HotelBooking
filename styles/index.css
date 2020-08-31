@@ -17,7 +17,8 @@
     .listofCity {
         display: flex;
         justify-content: space-around;
-        margin-top: 20px;
+        margin-top: 40px;
+        flex-wrap: wrap;
     }
     
     .view {
